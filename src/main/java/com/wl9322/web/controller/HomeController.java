@@ -14,12 +14,13 @@ import com.wl9322.web.service.PortfolioService;
 public class HomeController {
 	
 	@Autowired
-	private PortfolioService portfolioService;
+	private PortfolioService jdbcPortfoiloService;
 	
-	@RequestMapping("index")
+	@RequestMapping(value = {"index",""})
 	public String index(Model model) {
-		Portfolio porfol = portfolioService.getPortfolio();
+		Portfolio porfol = jdbcPortfoiloService.getPortfolio();
 		model.addAttribute("porfol", porfol);
 		return "index";
 	}
+	
 }

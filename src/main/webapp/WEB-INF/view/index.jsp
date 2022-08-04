@@ -419,7 +419,7 @@
 								<div class="col-md-6 animate-box blockchain work"
 									data-animate-effect="${animate}">
 									<div class="project"
-										style="background-image: url(images/procject/${summarys.category}/${summarys.src_title}/${summarys.rep_image}.jpg);">
+										style="background-image: url(images/project/${summarys.category}/${summarys.src_title}/${summarys.rep_image}.jpg);">
 										<div class="desc">
 											<div class="con">
 												<h3>

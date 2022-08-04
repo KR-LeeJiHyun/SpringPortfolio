@@ -290,18 +290,11 @@
 		let curURL = $(window.location)[0].href;
 		let specialIndex = curURL.indexOf("#");
 		let url = curURL.replace("#", "");
-		let url_split = url.split('/');
-		console.log(url_split[0] + url_split[1] + url_split[2]);
-		console.log(url_split[3]);
-		console.log(url_split[4]);
 		
 		if (specialIndex != -1) {
 			let url = curURL.replace("#", "");
 			let url_split = url.split('/');
-			console.log(url_split[0] + url_split[1] + url_split[2]);
-			console.log(url_split[3]);
-			console.log(url_split[4]);
-			myload(url_split[0] + url_split[1] + url_split[2], url_split[3], url_split[4]);
+			myload(url_split[0] + "/" + url_split[1] + "/" + url_split[2] + "/" + url_split[3] + "/" + url_split[4], url_split[5], url_split[6]);
 		}	
 	}
 
